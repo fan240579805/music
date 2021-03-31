@@ -1,0 +1,48 @@
+@import "normalize.css";
+
+/*全局滚动条样式*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #01c8dc;
+  border-radius: 3px;
+  background-color: rgb(206, 204, 204);
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b6b6b6;
+}
+/*全局滚动条样式结束*/
+
+/**
+  更改全局加载中样式
+*/
+.el-loading-spinner i{
+/*为了使得文字在loading图下面*/
+  font-size: 28px !important;
+  /* font-weight: 800 !important; */
+  color: #eee !important;
+  margin-top: 12px;
+}
+.el-loading-text{
+  color: #eee !important;
+  font-size: 17px !important;
+  
+  /* font-weight: 800 !important; */
+}
+.el-loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 120px !important;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+
+}
