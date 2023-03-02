@@ -53,6 +53,10 @@ export const getSingerList = (params) => {
     return request.get('/artist/list', { params });
 }
 
+// 获取 最新歌曲
+export const getLatestMusic = (params) => {
+    return request.get('/top/song', { params });
+}
 
 
 export default {

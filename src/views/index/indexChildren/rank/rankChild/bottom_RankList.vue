@@ -27,17 +27,17 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
+import { mapActions } from "vuex";
 
 import rankReq from "network/rankReq";
-import {getRankMusicList} from 'network/rankReq';
+import { getRankMusicList } from "network/rankReq";
 
 export default {
   name: "BottomRank",
   data() {
     return {
-      allMusic:[],
-      musicItemArray:[]
+      allMusic: [],
+      musicItemArray: [],
     };
   },
   props: {
@@ -59,8 +59,8 @@ export default {
         },
       });
     },
-    async getRankAllMusic(id){
-      const res =  await getRankMusicList({id});
+    async getRankAllMusic(id) {
+      const res = await getRankMusicList({ id });
       this.allMusic = res.data.playlist.tracks;
     },
     // 点击歌单中心的 黑色播放按钮 将榜单中所有的歌曲 加进列表（vuex）中

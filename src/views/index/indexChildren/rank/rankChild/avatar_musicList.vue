@@ -182,7 +182,7 @@ export default {
     align-items: center;
     .avatar:hover .play_wrap {
       opacity: 1;
-      transition: .3s;
+      transition: 0.3s;
     }
     .avatar {
       position: relative;
@@ -200,7 +200,7 @@ export default {
         right: 50%;
         width: 68px;
         border-radius: 10px;
-        transition: .3s;
+        transition: 0.3s;
         .play_hidden {
           width: 100%;
         }
